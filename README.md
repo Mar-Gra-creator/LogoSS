@@ -89,8 +89,8 @@ python LogoSS_v1.0.py query.fasta output_dir/ [options]
 | `--skip_colabfold` | off | Re-use existing ColabFold results in `output_dir/` |
 | `--seg N` | 60 | Residues per segment in the figure |
 | `--stretch X` | 0.35 | Width per residue (inches) |
-| `--ss simple\|accurate` | simple | Simple = H/E/C; accurate = 8 DSSP categories |
-| `--palette default\|reversed\|cvd` | default | Color palette (CVD = colorblind-friendly) |
+| `--ss simple\|accurate` | simple | Simple = H/E/C; accurate = 8 DSSP categories(only simple works now) |
+| `--palette default\|reversed\|cvd` | default | Color palette (CVD = colorblind-friendly) (not work now) |
 | `--min_cov X` | 0.0 | Minimum sequence coverage filter for a3m |
 | `--noise_cutoff X` | 0.05 | Letter height cutoff for the logo |
 
@@ -102,7 +102,7 @@ python LogoSS_v1.0.py PKL_SEAE1.fasta runs/SEAE1/
 
 # Re-render figure with different segmentation (no re-prediction)
 python LogoSS_v1.0.py PKL_SEAE1.fasta runs/SEAE1/ \
-    --skip_colabfold --seg 80 --palette cvd
+    --skip_colabfold --seg 80 
 ```
 
 ## Citing LogoSS
@@ -111,7 +111,6 @@ If you use LogoSS, please cite:
 
 > Gradowski M. (2026). *Systematic discovery of protein kinase-like domains reveals diverse evolutionary strategies in the human oral microbiome.* [Journal, DOI]
 
-A `CITATION.cff` is included for direct GitHub citation export.
 
 ## License
 
