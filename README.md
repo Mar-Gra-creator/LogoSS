@@ -1,4 +1,4 @@
-# LogoSS
+# LogoSS 1.0 (prototype)
 
 **End-to-end pipeline for annotated sequence logos with secondary structure**
 
@@ -20,19 +20,17 @@ DSSP secondary structure          a3m filtering / collapsing
    Annotated sequence logo (PNG, 300 DPI)
    • per-position information content (Logomaker)
    • α-helix / β-strand / loop track above
-   • pLDDT / pTM reported in figure header
 ```
 
 ## Features
 
 - **End-to-end:** single FASTA in → annotated logo PNG out
 - **ColabFold integration** — automatic homolog retrieval and structural modeling
-- **Skip mode** (`--skip_colabfold`) — re-use existing ColabFold results
+- **Skip mode** (`--skip_colabfold`) — re-use existing ColabFold results (in development)
 - **MSA filtering by coverage** (`--min_cov`)
-- **Two secondary-structure granularities** — simple (H/E/C) or accurate (8 DSSP categories)
-- **Color palette options** — default, reversed, colorblind-friendly
+- **Two secondary-structure granularities** — simple (H/E/C) or accurate (8 DSSP categories) (in development)
+- **Color palette options** — default, reversed, colorblind-friendly (in development)
 - **Configurable segmentation** for long proteins (`--seg`, `--stretch`)
-- Reports **pLDDT and pTM** of the representative model in the figure title
 
 ## Requirements
 
@@ -89,8 +87,8 @@ python LogoSS_v1.0.py query.fasta output_dir/ [options]
 | `--skip_colabfold` | off | Re-use existing ColabFold results in `output_dir/` |
 | `--seg N` | 60 | Residues per segment in the figure |
 | `--stretch X` | 0.35 | Width per residue (inches) |
-| `--ss simple\|accurate` | simple | Simple = H/E/C; accurate = 8 DSSP categories(only simple works now) |
-| `--palette default\|reversed\|cvd` | default | Color palette (CVD = colorblind-friendly) (not work now) |
+| `--ss simple\|accurate` | simple | Simple = H/E/C; accurate = 8 DSSP categories (accurate in development) |
+| `--palette default\|reversed\|cvd` | default | Color palette (CVD = colorblind-friendly)  (in development) |
 | `--min_cov X` | 0.0 | Minimum sequence coverage filter for a3m |
 | `--noise_cutoff X` | 0.05 | Letter height cutoff for the logo |
 
@@ -125,4 +123,4 @@ Warsaw University of Life Sciences — SGGW
 
 ## Status
 
-LogoSS is at **version 1.0**. Feedback and bug reports are welcome via GitHub Issues.
+LogoSS is at **version 1.0** (prototype). Feedback and bug reports are welcome via GitHub Issues.
