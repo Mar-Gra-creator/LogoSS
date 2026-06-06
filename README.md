@@ -14,7 +14,7 @@ ColabFold (homolog MSA via MMseqs2 + structure prediction)
 PDB model + a3m alignment + pLDDT/pTM scores
         ↓
 DSSP secondary structure          a3m filtering / collapsing
-        ↓                                    ↓
+        ↓                                     ↓
         └───────────────┬─────────────────────┘
                         ↓
    Annotated sequence logo (PNG, 300 DPI)
