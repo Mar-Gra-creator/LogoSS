@@ -121,6 +121,14 @@ Department of Biochemistry and Microbiology
 Warsaw University of Life Sciences — SGGW  
 [marcin_gradowski@sggw.edu.pl](mailto:marcin_gradowski@sggw.edu.pl)
 
-## Status
+## Planned features (v2.0)
 
-LogoSS is at **version 1.0** (prototype). Feedback and bug reports are welcome via GitHub Issues.
+The following capabilities are planned for future releases:
+
+- **Custom PDB input** — provide a experimental or pre-computed structure instead of 
+  running ColabFold (`--pdb custom.pdb`)
+- **Custom secondary structure** — supply a user-defined SS annotation 
+  in DSSP-fasta format (`--ss-file custom.dssp.fasta`)
+- **Custom alignment** — provide a pre-computed MSA instead of 
+  MMseqs2/ColabFold (`--msa custom.fasta` or `.a3m`)
+Feedback and bug reports are welcome via GitHub Issues.
