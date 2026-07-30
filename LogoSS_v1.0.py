@@ -1,10 +1,9 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Version: FIN7 - English log output + ColabFold pTM/pLDDT reporting
+Version: FIN7 
 Changes vs FIN6:
-1. All log/print messages translated to English.
-2. parse_colabfold_scores() reads ColabFold log.txt and reports
+1. parse_colabfold_scores() reads ColabFold log.txt and reports
    pLDDT and pTM for the rank_001 (relaxed) model in the run header.
 """
 
