@@ -41,7 +41,7 @@ DSSP secondary structure          a3m filtering / collapsing
 
 ## Installation
 
-### Option A — conda / mamba (recommended)
+### Option A — conda / mamba / micromamba (recommended)
 
 Installs everything including DSSP in one step:
 
@@ -107,8 +107,7 @@ python LogoSS_v1.0.py PKL_SEAE1.fasta runs/SEAE1/ \
 
 If you use LogoSS, please cite:
 
-> Gradowski M. (2026). *Systematic discovery of protein kinase-like domains reveals diverse evolutionary strategies in the human oral microbiome.* [Journal, DOI]
-
+> Gradowski M. (2026). ....
 
 ## License
 
@@ -131,4 +130,5 @@ The following capabilities are planned for future releases:
   in DSSP-fasta format (`--ss-file custom.dssp.fasta`)
 - **Custom alignment** — provide a pre-computed MSA instead of 
   MMseqs2/ColabFold (`--msa custom.fasta` or `.a3m`)
+  
 Feedback and bug reports are welcome via GitHub Issues.
