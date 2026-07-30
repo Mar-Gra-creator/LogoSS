@@ -36,7 +36,7 @@ DSSP secondary structure          a3m filtering / collapsing
 
 - Python 3.9+
 - ColabFold (`colabfold_batch` — install via `colabfold-conda` or pip)
-- DSSP (`mkdssp` ≥ 3.0)
+- DSSP (`mkdssp` ≥ 4.0)
 - Python packages — see `requirements.txt` or `environment.yml`
 
 ## Installation
