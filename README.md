@@ -1,5 +1,5 @@
 # LogoSS 1.0 (prototype)
-
+Refactored with AI (Claude)
 **End-to-end pipeline for annotated sequence logos with secondary structure**
 
 LogoSS takes a single query protein sequence as input and generates a publication-quality sequence logo annotated with secondary structure. It integrates **ColabFold** for homolog retrieval and structure prediction, **DSSP** for secondary-structure annotation, and **Logomaker** for visualization — all in one command.
