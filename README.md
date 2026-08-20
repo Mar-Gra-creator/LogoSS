@@ -99,9 +99,6 @@ python LogoSS_v1.0.py query.fasta output_dir/ [options]
 # Full pipeline (ColabFold + DSSP + logo)
 python LogoSS_v1.0.py PKL_SEAE1.fasta runs/SEAE1/
 
-# Re-render figure with different segmentation (no re-prediction)
-python LogoSS_v1.0.py PKL_SEAE1.fasta runs/SEAE1/ \
-    --skip_colabfold --seg 80 
 ```
 
 ## Citing LogoSS
