@@ -1,4 +1,4 @@
-# LogoSS 1.0 (prototype)
+# LogoSS 0.1.0 (prototype)
 Refactored with AI (Claude)
 
 **End-to-end pipeline for annotated sequence logos with secondary structure**
@@ -106,6 +106,30 @@ python LogoSS_v1.0.py PKL_SEAE1.fasta runs/SEAE1/
 If you use LogoSS, please cite:
 
 > ...
+
+## Citing LogoSS
+
+> ...
+
+LogoSS builds on the following tools — please also cite them:
+
+- **ColabFold** — Mirdita M, Schütze K, Moriwaki Y, Heo L, Ovchinnikov S, Steinegger M.
+  ColabFold: making protein folding accessible to all. *Nat Methods* 19, 679–682 (2022).
+  https://doi.org/10.1038/s41592-022-01488-1
+- **AlphaFold2** — Jumper J, Evans R, Pritzel A, et al. Highly accurate protein structure
+  prediction with AlphaFold. *Nature* 596, 583–589 (2021).
+  https://doi.org/10.1038/s41586-021-03819-2
+- **MMseqs2** — Steinegger M, Söding J. MMseqs2 enables sensitive protein sequence searching
+  for the analysis of massive data sets. *Nat Biotechnol* 35, 1026–1028 (2017).
+  https://doi.org/10.1038/nbt.3988
+- **DSSP** — Kabsch W, Sander C. Dictionary of protein secondary structure: pattern recognition
+  of hydrogen-bonded and geometrical features. *Biopolymers* 22, 2577–2637 (1983).
+  https://doi.org/10.1002/bip.360221211
+- **DSSP 4** — Hekkelman ML, Álvarez Salmoral D, Perrakis A, Joosten RP. DSSP 4: FAIR annotation
+  of protein secondary structure. *Protein Sci* 34, e70208 (2025).
+  https://doi.org/10.1002/pro.70208
+- **Logomaker** — Tareen A, Kinney JB. Logomaker: beautiful sequence logos in Python.
+  *Bioinformatics* 36, 2272–2274 (2020). https://doi.org/10.1093/bioinformatics/btz921
 
 ## License
 
