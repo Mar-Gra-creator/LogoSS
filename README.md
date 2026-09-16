@@ -105,7 +105,7 @@ python LogoSS_v1.0.py PKL_SEAE1.fasta runs/SEAE1/
 
 If you use LogoSS, please cite:
 
-> Gradowski M. (2026). ....
+> ...
 
 ## License
 
