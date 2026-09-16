@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Version: FIN7 
+Version: 0.1.0 
 Changes vs FIN6:
 1. parse_colabfold_scores() reads ColabFold log.txt and reports
    pLDDT and pTM for the rank_001 (relaxed) model in the run header.
@@ -12,7 +12,7 @@ import datetime
 from pathlib import Path
 from collections import Counter
 
-# Konfiguracja Matplotlib bez okna (headless)
+# Matplotlib (headless)
 os.environ.setdefault("MPLBACKEND", "Agg")
 
 PNG_DPI     = 300
@@ -321,7 +321,7 @@ def ss_to_categories(ss_string, mode="simple", palette="default"):
         ]
         return np.array(idx, dtype=int), ListedColormap(colors), legend
 
-# --------------- rysowanie logo/SS -------------------
+# --------------- DRAW logo/SS -------------------
 
 def _draw_segment_logo(ax, df_seg, start_idx_abs, tick_step, ylim_bits,
                        start_index_base=1):
@@ -365,7 +365,7 @@ def generate_logo_logomaker(aln_fasta, ss_fasta, out_png, title=None,
     df_counts = counts_ignoring_gaps(seqs, alphabet=AA20)
     df_info   = lm.transform_matrix(df_counts, from_type='counts', to_type='information')
     
-    # === FILTROWANIE SZUMU ===
+    # === NOISE FILTER ===
     if noise_cutoff > 0:
         print(f"[Logo] Filtering noise below {noise_cutoff} bits...")
         df_info[df_info < noise_cutoff] = 0.0
@@ -387,22 +387,17 @@ def generate_logo_logomaker(aln_fasta, ss_fasta, out_png, title=None,
     print(f"[Plotting] Figure Size: {fig_w:.1f} x {fig_h:.1f} inches")
     fig = plt.figure(figsize=(fig_w, fig_h))
 
-    # --- UKŁAD STRONY ---
+
     if title:
-        # Tytuł na samej górze
         fig.suptitle(title, fontsize=24, fontname='monospace', fontweight='bold', y=0.99)
 
-    # Dedykowany pasek legendy: Niżej niż wcześniej (bottom=0.90) i wyższy (height=0.06)
-    # [left, bottom, width, height]
     ax_legend_strip = fig.add_axes([0.0, 0.90, 1.0, 0.06])
     ax_legend_strip.axis('off')
     
-    # Czcionka powiększona do 18
     leg = ax_legend_strip.legend(handles=legend_elems, ncol=4 if ss_mode=="accurate" else 3,
                                  frameon=False, loc='center', fontsize=18)
     plt.setp(leg.get_texts(), fontname='monospace')
 
-    # Wykresy startują niżej (top=0.85)
     row_logo, row_gap, row_ss = 3.15, 0.5, 0.7
     heights = []
     for _ in range(n_rows):
