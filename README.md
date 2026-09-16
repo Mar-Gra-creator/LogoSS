@@ -103,12 +103,6 @@ python LogoSS_v1.0.py PKL_SEAE1.fasta runs/SEAE1/
 
 ## Citing LogoSS
 
-If you use LogoSS, please cite:
-
-> ...
-
-## Citing LogoSS
-
 > ...
 
 LogoSS builds on the following tools — please also cite them:
