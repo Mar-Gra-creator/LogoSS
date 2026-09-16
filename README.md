@@ -47,10 +47,10 @@ DSSP secondary structure          a3m filtering / collapsing
 Installs everything including DSSP in one step:
 
 ```bash
-git clone https://github.com/<your-username>/LogoSS.git
+git clone https://github.com/Mar-Gra-creator/LogoSS.git
 cd LogoSS
-mamba env create -f environment.yml     # or: conda env create -f environment.yml
-conda activate logoss
+micromamba env create -f environment.yml     # or: conda env create -f environment.yml
+micromamba activate logoss
 ```
 
 ColabFold must be installed separately:
