@@ -80,7 +80,7 @@ That single command will:
 ### Options
 
 ```bash
-python LogoSS_v1.0.py query.fasta output_dir/ [options]
+python LogoSS_v0.1.0.py query.fasta output_dir/ [options]
 ```
 
 | Option | Default | Description |
@@ -97,7 +97,7 @@ python LogoSS_v1.0.py query.fasta output_dir/ [options]
 
 ```bash
 # Full pipeline (ColabFold + DSSP + logo)
-python LogoSS_v1.0.py PKL_SEAE1.fasta runs/SEAE1/
+python LogoSS_v0.1.0.py HopBF1.fasta runs/example/
 
 ```
 
@@ -136,7 +136,7 @@ Department of Biochemistry and Microbiology
 Warsaw University of Life Sciences — SGGW  
 [marcin_gradowski@sggw.edu.pl](mailto:marcin_gradowski@sggw.edu.pl)
 
-## Planned features (v2.0)
+## Planned features
 
 The following capabilities are planned for future releases:
 
