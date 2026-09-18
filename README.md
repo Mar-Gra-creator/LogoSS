@@ -1,5 +1,6 @@
 # LogoSS 0.1.0 (prototype)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22832949.svg)](https://doi.org/10.5281/zenodo.22832949)
+
 Refactored with AI (Claude)
 
 **End-to-end pipeline for annotated sequence logos with secondary structure**
